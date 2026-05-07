@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Direito Aéreo — Voo cancelado, bagagem extraviada, overbooking? Conheça seus direitos de passageiro. Kewar Ramos Advocacia.">
+  <meta name="keywords" content="voo cancelado indenização, bagagem extraviada, overbooking direito, atraso de voo indenização, advogado direito aéreo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.kewaneramosadvocacia.com/aereo.html">
+  <title>Direito Aéreo | Kewar Ramos Advocacia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cor: #E13E00;
+      --cor-escura: #B53200;
+      --cor-bg: #1A0A00;
+      --cor-clara: #FFF0EB;
+      --cor-texto: #1a1a1a;
+      --cor-texto-claro: #5a5a5a;
+      --cor-fundo: #FAFAF8;
+      --cor-fundo2: #FFF5F0;
+      --fonte-titulo: 'Cormorant Garamond', serif;
+      --fonte-corpo: 'DM Sans', sans-serif;
+      --raio: 4px;
+      --transicao: all 0.3s ease;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--fonte-corpo); background: var(--cor-fundo); color: var(--cor-texto); overflow-x: hidden; line-height: 1.6; }
+
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,250,248,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(225,62,0,0.1); }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; height: 72px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .logo-icon { width: 40px; height: 40px; }
+    .logo-nome { font-family: var(--fonte-titulo); font-size: 1.1rem; font-weight: 600; color: #154C56; display: block; line-height: 1.1; }
+    .logo-sub { font-size: 0.6rem; font-weight: 300; color: var(--cor-texto-claro); letter-spacing: 0.12em; text-transform: uppercase; }
+    nav { display: flex; align-items: center; gap: 1.5rem; }
+    nav a { font-size: 0.83rem; color: var(--cor-texto-claro); text-decoration: none; transition: var(--transicao); }
+    nav a:hover, nav a.ativa { color: var(--cor); }
+    .btn-nav { background: #154C56; color: white !important; padding: 0.55rem 1.2rem; border-radius: var(--raio); font-size: 0.8rem; font-weight: 500; }
+    .btn-nav:hover { background: #0f3840 !important; }
+    .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .menu-toggle span { display: block; width: 24px; height: 1.5px; background: var(--cor-texto); }
+
+    .hero-area { padding: 160px 2rem 80px; background: var(--cor-bg); position: relative; overflow: hidden; }
+    .hero-area::after { content: ''; position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1400&q=60') center/cover no-repeat; opacity: 0.12; }
+    .hero-area-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 1.5rem; }
+    .breadcrumb a { font-size: 0.78rem; color: rgba(255,255,255,0.5); text-decoration: none; }
+    .breadcrumb span { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
+    .breadcrumb strong { font-size: 0.78rem; font-weight: 400; color: rgba(255,255,255,0.7); }
+    .area-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cor); margin-bottom: 1rem; }
+    .area-tag::before { content: ''; width: 28px; height: 1px; background: var(--cor); display: block; }
+    .hero-area h1 { font-family: var(--fonte-titulo); font-size: clamp(2.4rem, 5vw, 4.5rem); font-weight: 600; color: white; line-height: 1.05; max-width: 700px; margin-bottom: 1.5rem; }
+    .hero-area h1 em { font-style: italic; color: var(--cor); }
+    .hero-area p { font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.7); max-width: 560px; line-height: 1.75; margin-bottom: 2.5rem; }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-p { display: inline-flex; align-items: center; gap: 8px; background: var(--cor); color: white; text-decoration: none; padding: 0.9rem 1.8rem; font-size: 0.88rem; font-weight: 500; border-radius: var(--raio); transition: var(--transicao); }
+    .btn-p:hover { background: var(--cor-escura); transform: translateY(-2px); }
+    .btn-s { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.9rem 1.8rem; font-size: 0.88rem; border: 1px solid rgba(255,255,255,0.25); border-radius: var(--raio); transition: var(--transicao); }
+    .btn-s:hover { border-color: white; }
+
+    .container { max-width: 1200px; margin: 0 auto; }
+    .secao { padding: 6rem 2rem; }
+    .secao-alt { background: var(--cor-fundo2); }
+    .secao-tag { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cor); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px; }
+    .secao-tag::before { content: ''; width: 24px; height: 1px; background: var(--cor); display: block; }
+    .secao-titulo { font-family: var(--fonte-titulo); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 600; color: var(--cor-texto); line-height: 1.1; margin-bottom: 1rem; }
+    .secao-titulo em { font-style: italic; color: var(--cor); }
+
+    .direitos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .direito-card { background: white; border-radius: 8px; padding: 2rem; border-left: 3px solid var(--cor); box-shadow: 0 2px 12px rgba(0,0,0,0.04); transition: var(--transicao); }
+    .direito-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(225,62,0,0.1); }
+    .direito-situacao { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cor); margin-bottom: 0.5rem; }
+    .direito-titulo { font-size: 1.05rem; font-weight: 500; color: var(--cor-texto); margin-bottom: 0.5rem; }
+    .direito-desc { font-size: 0.83rem; font-weight: 300; color: var(--cor-texto-claro); line-height: 1.65; }
+
+    .prazos-tabela { width: 100%; border-collapse: collapse; margin-top: 2rem; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+    .prazos-tabela th { background: var(--cor); color: white; padding: 1rem 1.5rem; text-align: left; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.05em; }
+    .prazos-tabela td { padding: 1rem 1.5rem; font-size: 0.85rem; color: var(--cor-texto-claro); border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .prazos-tabela tr:last-child td { border-bottom: none; }
+    .prazos-tabela tr:hover td { background: var(--cor-fundo2); }
+
+    .faq-lista { display: flex; flex-direction: column; gap: 1px; border-radius: 8px; overflow: hidden; background: rgba(225,62,0,0.08); }
+    .faq-item { background: white; }
+    .faq-pergunta { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; cursor: pointer; gap: 1rem; transition: var(--transicao); }
+    .faq-pergunta:hover { background: var(--cor-fundo2); }
+    .faq-pergunta-texto { font-size: 0.95rem; font-weight: 500; color: var(--cor-texto); }
+    .faq-icone { width: 20px; height: 20px; flex-shrink: 0; color: var(--cor); transition: transform 0.3s; }
+    .faq-item.aberto .faq-icone { transform: rotate(45deg); }
+    .faq-resposta { font-size: 0.88rem; font-weight: 300; color: var(--cor-texto-claro); line-height: 1.75; padding: 0 2rem 1.5rem; display: none; }
+    .faq-item.aberto .faq-resposta { display: block; }
+
+    .cta-bloco { background: var(--cor-bg); border-radius: 8px; padding: 4rem; display: flex; justify-content: space-between; align-items: center; gap: 3rem; }
+    .cta-bloco h2 { font-family: var(--fonte-titulo); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 600; color: white; line-height: 1.15; }
+    .cta-bloco p { font-size: 0.9rem; font-weight: 300; color: rgba(255,255,255,0.65); margin-top: 0.75rem; max-width: 400px; }
+    .btn-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--cor); color: white; text-decoration: none; padding: 1rem 2rem; font-size: 0.9rem; font-weight: 500; border-radius: var(--raio); transition: var(--transicao); white-space: nowrap; }
+    .btn-cta:hover { background: var(--cor-escura); transform: translateY(-2px); }
+
+    footer { background: #0d2d35; padding: 3rem 2rem 2rem; }
+    .footer-bottom { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
+    .footer-links-f { display: flex; gap: 1.5rem; }
+    .footer-links-f a { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-decoration: none; }
+    .footer-etica { font-size: 0.7rem; color: rgba(255,255,255,0.2); margin: 1rem auto 0; max-width: 1200px; line-height: 1.5; }
+
+    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 99; width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: var(--transicao); text-decoration: none; }
+    .whatsapp-float:hover { transform: scale(1.1); }
+    .whatsapp-float svg { width: 28px; height: 28px; fill: white; }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      nav.aberto { display: flex; flex-direction: column; position: fixed; inset: 72px 0 0 0; background: var(--cor-fundo); padding: 2rem; gap: 1.5rem; z-index: 99; align-items: flex-start; }
+      .menu-toggle { display: flex; }
+      .direitos-grid { grid-template-columns: 1fr; }
+      .cta-bloco { flex-direction: column; padding: 2.5rem; }
+      .prazos-tabela th, .prazos-tabela td { padding: 0.75rem 1rem; font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <svg class="logo-icon" viewBox="0 0 200 200" fill="none"><rect width="200" height="200" rx="12" fill="#154C56"/><path d="M40 155V55H80C100 55 115 60 125 70C135 80 140 94 140 112C140 130 135 144 125 154C115 163 100 168 80 168H40V155ZM60 150H78C94 150 105 146 113 138C121 130 125 123 125 112C125 101 121 92 113 84C105 76 94 72 78 72H60V150Z" fill="white"/></svg>
+        <div><span class="logo-nome">Kewar Ramos</span><span class="logo-sub">Advocacia</span></div>
+      </a>
+      <nav id="nav">
+        <a href="/">Início</a>
+        <a href="/previdenciario.html">Previdenciário</a>
+        <a href="/saude.html">Saúde</a>
+        <a href="/aereo.html" class="ativa">Aéreo</a>
+        <a href="/#sobre">O Escritório</a>
+        <a href="/#contato" class="btn-nav">Fale Conosco</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="hero-area">
+    <div class="hero-area-inner">
+      <div class="breadcrumb"><a href="/">Início</a><span>/</span><strong>Direito Aéreo</strong></div>
+      <div class="area-tag">Área de atuação</div>
+      <h1>Direito <em>Aéreo</em></h1>
+      <p>Voo cancelado sem assistência? Bagagem extraviada? Overbooking? O passageiro tem direitos garantidos pela ANAC e pelo Código de Defesa do Consumidor. Entenda o que você pode fazer.</p>
+      <div class="hero-btns">
+        <a href="/#contato" class="btn-p">Verificar meu caso</a>
+        <a href="#direitos" class="btn-s">Ver meus direitos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="direitos">
+    <div class="container">
+      <div style="max-width: 600px; margin-bottom: 3rem;" class="reveal">
+        <div class="secao-tag">Seus direitos</div>
+        <h2 class="secao-titulo">Situações em que você tem <em>direito a mais</em></h2>
+        <p style="font-size: 0.95rem; font-weight: 300; color: var(--cor-texto-claro); line-height: 1.75;">A Resolução ANAC 400/2016 e o Código de Defesa do Consumidor garantem direitos concretos ao passageiro em diversas situações. Veja as principais:</p>
+      </div>
+      <div class="direitos-grid">
+        <div class="direito-card reveal">
+          <div class="direito-situacao">Voo cancelado</div>
+          <div class="direito-titulo">Cancelamento de voo pela companhia</div>
+          <p class="direito-desc">Você tem direito a: reembolso integral, reacomodação em outro voo, assistência material (alimentação, hospedagem) e, dependendo do prazo de aviso, à indenização por danos morais e materiais.</p>
+        </div>
+        <div class="direito-card reveal">
+          <div class="direito-situacao">Atraso</div>
+          <div class="direito-titulo">Atraso superior a 1 hora</div>
+          <p class="direito-desc">A partir de 1h: acesso a comunicação. A partir de 2h: alimentação. A partir de 4h: hospedagem e transporte (se necessário). Atrasos superiores a 4h podem gerar direito a indenização.</p>
+        </div>
+        <div class="direito-card reveal">
+          <div class="direito-situacao">Bagagem</div>
+          <div class="direito-titulo">Bagagem extraviada, violada ou danificada</div>
+          <p class="direito-desc">A companhia tem 7 dias para localizar bagagem extraviada em voos domésticos (21 dias em internacionais). Após esse prazo, indenização é devida. Danos na bagagem também geram direito à reparação.</p>
+        </div>
+        <div class="direito-card reveal">
+          <div class="direito-situacao">Overbooking</div>
+          <div class="direito-titulo">Preterição de embarque (Overbooking)</div>
+          <p class="direito-desc">Quando a companhia vende mais passagens do que assentos disponíveis, quem é impedido de embarcar tem direito a reacomodação, reembolso e indenização por danos morais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao secao-alt">
+    <div class="container">
+      <div class="reveal">
+        <div class="secao-tag">Prazos e limites</div>
+        <h2 class="secao-titulo">O que a <em>ANAC garante</em> por situação</h2>
+      </div>
+      <table class="prazos-tabela reveal">
+        <thead><tr><th>Situação</th><th>Direito imediato</th><th>Prazo para reclamar</th></tr></thead>
+        <tbody>
+          <tr><td>Atraso superior a 4h ou cancelamento</td><td>Reembolso integral ou reacomodação + assistência</td><td>Até 2 anos após o voo</td></tr>
+          <tr><td>Bagagem extraviada (doméstico)</td><td>7 dias para localizar; indenização após</td><td>Até 2 anos após o voo</td></tr>
+          <tr><td>Bagagem extraviada (internacional)</td><td>21 dias para localizar; indenização após</td><td>2 anos (Conv. de Montreal)</td></tr>
+          <tr><td>Bagagem danificada</td><td>Reparação ou indenização pelo valor do dano</td><td>7 dias após receber</td></tr>
+          <tr><td>Overbooking / preterição</td><td>Reacomodação + indenização</td><td>Até 5 anos (CDC)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;" class="reveal">
+        <div class="secao-tag" style="justify-content: center;">Dúvidas</div>
+        <h2 class="secao-titulo">Perguntas sobre <em>Direito Aéreo</em></h2>
+      </div>
+      <div class="faq-lista">
+        <div class="faq-item">
+          <div class="faq-pergunta"><span class="faq-pergunta-texto">Meu voo atrasou 5 horas. Tenho direito a indenização?</span><svg class="faq-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          <div class="faq-resposta">Sim. Atrasos superiores a 4 horas podem gerar direito a indenização por danos morais e, se houver comprovação de prejuízo financeiro (reunião perdida, hospedagem adicional, etc.), também por danos materiais. É importante guardar todos os comprovantes do voo e dos gastos extras.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-pergunta"><span class="faq-pergunta-texto">A companhia cancelou o voo e me reacomodou em outro. Ainda tenho direitos?</span><svg class="faq-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          <div class="faq-resposta">A reacomodação não elimina automaticamente o direito à indenização. Se o cancelamento gerou transtornos, atrasos consideráveis ou prejuízos, pode ser cabível indenização por danos morais mesmo que a companhia tenha oferecido uma alternativa. Depende das circunstâncias de cada caso.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-pergunta"><span class="faq-pergunta-texto">Minha bagagem chegou com danos. O que fazer?</span><svg class="faq-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          <div class="faq-resposta">Imediatamente após verificar o dano, registre uma reclamação no balcão da companhia (RIB — Registro de Irregularidade de Bagagem) antes de sair do aeroporto. Fotografe os danos. Você tem 7 dias para reclamar em voos domésticos. Após esse prazo, fica mais difícil provar que o dano ocorreu durante o transporte.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-pergunta"><span class="faq-pergunta-texto">A companhia pode alegar "caso fortuito" para não pagar?</span><svg class="faq-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          <div class="faq-resposta">A excludente de responsabilidade por caso fortuito e força maior existe, mas é interpretada de forma restrita pelos tribunais. Overbooking, falhas operacionais e problemas mecânicos não se enquadram nesses conceitos — são riscos do próprio negócio. Condições climáticas extremas e fechamento de aeroporto por autoridade podem ser excludentes válidas.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao secao-alt">
+    <div class="container">
+      <div class="cta-bloco reveal">
+        <div>
+          <h2>Teve problemas<br>em um voo?</h2>
+          <p>Nos conte o que aconteceu. Vamos analisar sua situação e orientar sobre os seus direitos como passageiro.</p>
+        </div>
+        <a href="/#contato" class="btn-cta">Verificar meu caso →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Kewar Ramos Advocacia · OAB/XX XXXXXX</p>
+      <div class="footer-links-f"><a href="/">Início</a><a href="/previdenciario.html">Previdenciário</a><a href="/saude.html">Saúde</a><a href="/#contato">Contato</a></div>
+    </div>
+    <p class="footer-etica">Publicidade exclusivamente informativa conforme Provimento 205/2021 do CFOAB e Código de Ética e Disciplina da OAB.</p>
+  </footer>
+
+  <a href="https://wa.me/55SEU_NUMERO?text=Olá,%20tive%20um%20problema%20com%20um%20voo%20e%20gostaria%20de%20orientação" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a>
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', () => document.getElementById('nav').classList.toggle('aberto'));
+    document.querySelectorAll('.faq-pergunta').forEach(p => { p.addEventListener('click', () => p.closest('.faq-item').classList.toggle('aberto')); });
+    const obs = new IntersectionObserver((entries) => { entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); obs.unobserve(e.target); } }); }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>

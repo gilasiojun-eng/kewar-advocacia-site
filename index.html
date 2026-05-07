@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kewar Ramos Advocacia — Escritório full service especializado em Direito Previdenciário, Aeronáutico e Área da Saúde. Entenda seus direitos e busque orientação jurídica qualificada.">
+  <meta name="keywords" content="advogado previdenciário, direito aeronáutico, plano de saúde, advocacia, Kewar Ramos">
+  <meta property="og:title" content="Kewar Ramos Advocacia">
+  <meta property="og:description" content="Soluções jurídicas em Direito Previdenciário, Aeronáutico e Área da Saúde.">
+  <meta property="og:image" content="https://www.kewaneramosadvocacia.com/wp-content/uploads/2024/01/logo.png">
+  <meta property="og:url" content="https://www.kewaneramosadvocacia.com">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.kewaneramosadvocacia.com/">
+
+  <!-- Schema.org LegalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Kewar Ramos Advocacia",
+    "description": "Escritório de advocacia full service especializado em Direito Previdenciário, Aeronáutico e Área da Saúde",
+    "url": "https://www.kewaneramosadvocacia.com",
+    "telephone": "+55-",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "areaServed": "BR",
+    "serviceType": ["Direito Previdenciário", "Direito Aeronáutico", "Direito da Saúde"]
+  }
+  </script>
+
+  <title>Kewar Ramos Advocacia | Direito Previdenciário, Aeronáutico e Saúde</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cor-primaria: #154C56;
+      --cor-saude: #C1AB72;
+      --cor-prev: #154C56;
+      --cor-aereo: #E13E00;
+      --cor-texto: #1a1a1a;
+      --cor-texto-claro: #5a5a5a;
+      --cor-fundo: #FAFAF8;
+      --cor-fundo2: #F2F0EC;
+      --cor-branco: #ffffff;
+      --fonte-titulo: 'Cormorant Garamond', Georgia, serif;
+      --fonte-corpo: 'DM Sans', sans-serif;
+      --sombra: 0 4px 24px rgba(0,0,0,0.08);
+      --raio: 4px;
+      --transicao: all 0.3s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--fonte-corpo);
+      background: var(--cor-fundo);
+      color: var(--cor-texto);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(250,250,248,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(21,76,86,0.1);
+      transition: var(--transicao);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+    }
+
+    .logo-texto {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-nome {
+      font-family: var(--fonte-titulo);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--cor-primaria);
+      letter-spacing: 0.02em;
+    }
+
+    .logo-subtitulo {
+      font-size: 0.65rem;
+      font-weight: 300;
+      color: var(--cor-texto-claro);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    nav { display: flex; align-items: center; gap: 2rem; }
+
+    nav a {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--cor-texto-claro);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: var(--transicao);
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0; right: 0;
+      height: 1px;
+      background: var(--cor-primaria);
+      transform: scaleX(0);
+      transition: var(--transicao);
+    }
+
+    nav a:hover { color: var(--cor-primaria); }
+    nav a:hover::after { transform: scaleX(1); }
+
+    .btn-nav {
+      background: var(--cor-primaria);
+      color: white !important;
+      padding: 0.6rem 1.4rem;
+      border-radius: var(--raio);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      transition: var(--transicao);
+    }
+
+    .btn-nav::after { display: none; }
+    .btn-nav:hover { background: #0f3840 !important; transform: translateY(-1px); }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--cor-texto);
+      transition: var(--transicao);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: var(--cor-primaria);
+      padding-top: 72px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: 
+        linear-gradient(135deg, #0d3038 0%, #154C56 40%, #1a5f6b 70%, #0d3038 100%);
+    }
+
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      background-image: repeating-linear-gradient(
+        0deg, transparent, transparent 60px,
+        rgba(255,255,255,0.5) 60px, rgba(255,255,255,0.5) 61px
+      ),
+      repeating-linear-gradient(
+        90deg, transparent, transparent 60px,
+        rgba(255,255,255,0.5) 60px, rgba(255,255,255,0.5) 61px
+      );
+    }
+
+    .hero-image {
+      position: absolute;
+      right: 0; top: 0; bottom: 0;
+      width: 50%;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.25;
+      mix-blend-mode: luminosity;
+    }
+
+    .hero-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, #154C56 0%, transparent 60%);
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--cor-saude);
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.2s forwards;
+    }
+
+    .hero-tag::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--cor-saude);
+    }
+
+    .hero h1 {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(2.8rem, 6vw, 5.5rem);
+      font-weight: 600;
+      color: white;
+      line-height: 1.05;
+      max-width: 680px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.4s forwards;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--cor-saude);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+      max-width: 520px;
+      line-height: 1.7;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.6s forwards;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.8s forwards;
+    }
+
+    .btn-primario {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--cor-aereo);
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      border-radius: var(--raio);
+      transition: var(--transicao);
+    }
+
+    .btn-primario:hover { background: #c93500; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(225,62,0,0.35); }
+
+    .btn-secundario {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: var(--raio);
+      transition: var(--transicao);
+    }
+
+    .btn-secundario:hover { border-color: white; background: rgba(255,255,255,0.08); }
+
+    .hero-areas {
+      position: absolute;
+      bottom: 3rem;
+      right: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 1s forwards;
+    }
+
+    .hero-area-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.5rem 1rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 99px;
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-area-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── AREAS DE ATUAÇÃO ── */
+    .areas {
+      padding: 7rem 2rem;
+      background: var(--cor-fundo);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .secao-tag {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--cor-saude);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .secao-tag::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--cor-saude);
+    }
+
+    .secao-titulo {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 600;
+      color: var(--cor-texto);
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
+
+    .secao-titulo em { font-style: italic; color: var(--cor-primaria); }
+
+    .secao-desc {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--cor-texto-claro);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    .areas-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: end;
+      margin-bottom: 4rem;
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+      background: rgba(0,0,0,0.06);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .area-card {
+      background: var(--cor-branco);
+      padding: 3rem 2.5rem;
+      text-decoration: none;
+      color: var(--cor-texto);
+      position: relative;
+      overflow: hidden;
+      transition: var(--transicao);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .area-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--cor-area);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    .area-card:hover::before { transform: scaleX(1); }
+
+    .area-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+      z-index: 2;
+    }
+
+    .area-numero {
+      font-family: var(--fonte-titulo);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--cor-area);
+      letter-spacing: 0.1em;
+      opacity: 0.7;
+    }
+
+    .area-icone {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--cor-area) 12%, transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .area-icone svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--cor-area);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .area-nome {
+      font-family: var(--fonte-titulo);
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: var(--cor-texto);
+      line-height: 1.15;
+    }
+
+    .area-desc {
+      font-size: 0.88rem;
+      font-weight: 300;
+      color: var(--cor-texto-claro);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .area-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--cor-area);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-top: auto;
+    }
+
+    .area-link svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      transition: transform 0.3s;
+    }
+
+    .area-card:hover .area-link svg { transform: translateX(4px); }
+
+    /* ── SOBRE ── */
+    .sobre {
+      padding: 7rem 2rem;
+      background: var(--cor-fundo2);
+    }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .sobre-imagem {
+      position: relative;
+    }
+
+    .sobre-imagem img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .sobre-imagem-acento {
+      position: absolute;
+      bottom: -2rem;
+      right: -2rem;
+      width: 200px;
+      height: 200px;
+      border: 2px solid var(--cor-saude);
+      border-radius: 4px;
+      z-index: -1;
+    }
+
+    .sobre-badge {
+      position: absolute;
+      top: 2rem;
+      left: -2rem;
+      background: var(--cor-primaria);
+      color: white;
+      padding: 1.5rem;
+      border-radius: var(--raio);
+      text-align: center;
+      box-shadow: var(--sombra);
+    }
+
+    .sobre-badge-num {
+      font-family: var(--fonte-titulo);
+      font-size: 2.5rem;
+      font-weight: 600;
+      display: block;
+      line-height: 1;
+    }
+
+    .sobre-badge-txt {
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      opacity: 0.85;
+    }
+
+    .sobre-texto .secao-tag { margin-bottom: 1.5rem; }
+
+    .sobre-corpo {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--cor-texto-claro);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .sobre-valores {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .valor-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .valor-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--cor-saude);
+      margin-top: 8px;
+      flex-shrink: 0;
+    }
+
+    .valor-texto {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--cor-texto);
+    }
+
+    /* ── PROCESSO ── */
+    .processo {
+      padding: 7rem 2rem;
+      background: var(--cor-primaria);
+    }
+
+    .processo-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .processo-header .secao-tag { justify-content: center; }
+    .processo-header .secao-titulo { color: white; }
+    .processo-header .secao-desc { color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto; }
+
+    .processo-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .step {
+      background: rgba(255,255,255,0.04);
+      padding: 2.5rem 2rem;
+      position: relative;
+      transition: var(--transicao);
+    }
+
+    .step:hover { background: rgba(255,255,255,0.08); }
+
+    .step-num {
+      font-family: var(--fonte-titulo);
+      font-size: 4rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.08);
+      line-height: 1;
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .step-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(193,171,114,0.2);
+      border: 1px solid rgba(193,171,114,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .step-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--cor-saude);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+    }
+
+    .step-titulo {
+      font-family: var(--fonte-titulo);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 0.75rem;
+    }
+
+    .step-desc {
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+    }
+
+    /* ── AVALIAÇÕES ── */
+    .avaliacoes {
+      padding: 7rem 2rem;
+      background: var(--cor-fundo);
+    }
+
+    .avaliacoes-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3rem;
+    }
+
+    .avaliacoes-media {
+      text-align: right;
+    }
+
+    .media-numero {
+      font-family: var(--fonte-titulo);
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: var(--cor-primaria);
+      line-height: 1;
+    }
+
+    .media-estrelas {
+      display: flex;
+      gap: 3px;
+      justify-content: flex-end;
+      margin: 0.3rem 0;
+    }
+
+    .estrela {
+      width: 16px;
+      height: 16px;
+      fill: #F5A623;
+      color: #F5A623;
+    }
+
+    .media-total {
+      font-size: 0.8rem;
+      color: var(--cor-texto-claro);
+    }
+
+    .avaliacoes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .avaliacao-card {
+      background: var(--cor-branco);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 8px;
+      padding: 2rem;
+      transition: var(--transicao);
+    }
+
+    .avaliacao-card:hover { box-shadow: var(--sombra); transform: translateY(-2px); }
+
+    .av-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .av-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--cor-fundo2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--fonte-titulo);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--cor-primaria);
+      flex-shrink: 0;
+    }
+
+    .av-info { flex: 1; }
+
+    .av-nome {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--cor-texto);
+    }
+
+    .av-data {
+      font-size: 0.75rem;
+      color: var(--cor-texto-claro);
+    }
+
+    .av-estrelas {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 0.75rem;
+    }
+
+    .av-area-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 99px;
+      margin-bottom: 0.75rem;
+    }
+
+    .av-texto {
+      font-size: 0.88rem;
+      font-weight: 300;
+      color: var(--cor-texto-claro);
+      line-height: 1.65;
+      font-style: italic;
+    }
+
+    .avaliacoes-nota {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.78rem;
+      color: var(--cor-texto-claro);
+    }
+
+    .avaliacoes-nota a {
+      color: var(--cor-primaria);
+      text-decoration: none;
+    }
+
+    /* ── CONTATO ── */
+    .contato {
+      padding: 7rem 2rem;
+      background: var(--cor-fundo2);
+    }
+
+    .contato-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .contato-info .secao-titulo { margin-bottom: 1.5rem; }
+
+    .contato-corpo {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--cor-texto-claro);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+
+    .contato-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contato-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .contato-item-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--cor-primaria);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contato-item-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: white;
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+    }
+
+    .contato-item-texto {
+      padding-top: 4px;
+    }
+
+    .contato-item-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cor-saude);
+      margin-bottom: 3px;
+    }
+
+    .contato-item-valor {
+      font-size: 0.9rem;
+      color: var(--cor-texto);
+      text-decoration: none;
+    }
+
+    /* FORMULÁRIO */
+    .formulario {
+      background: var(--cor-branco);
+      border-radius: 8px;
+      padding: 3rem;
+      box-shadow: var(--sombra);
+    }
+
+    .form-titulo {
+      font-family: var(--fonte-titulo);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--cor-texto);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-subtitulo {
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--cor-texto-claro);
+      margin-bottom: 2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-grupo {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      color: var(--cor-texto);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: var(--raio);
+      font-family: var(--fonte-corpo);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--cor-texto);
+      background: var(--cor-fundo);
+      transition: var(--transicao);
+      outline: none;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--cor-primaria);
+      box-shadow: 0 0 0 3px rgba(21,76,86,0.1);
+    }
+
+    .form-textarea { resize: vertical; min-height: 120px; }
+
+    .form-aviso {
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: var(--cor-texto-claro);
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .btn-form {
+      width: 100%;
+      padding: 1rem;
+      background: var(--cor-primaria);
+      color: white;
+      border: none;
+      border-radius: var(--raio);
+      font-family: var(--fonte-corpo);
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: var(--transicao);
+    }
+
+    .btn-form:hover { background: #0f3840; transform: translateY(-1px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0d2d35;
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-logo .logo-nome { color: white; }
+    .footer-logo .logo-subtitulo { color: rgba(255,255,255,0.4); }
+    .footer-logo .logo { margin-bottom: 1rem; }
+
+    .footer-sobre {
+      font-size: 0.83rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-oab {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .footer-col-titulo {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cor-saude);
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      transition: var(--transicao);
+    }
+
+    .footer-links a:hover { color: white; }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.3);
+      font-weight: 300;
+    }
+
+    .footer-etica {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.25);
+      text-align: right;
+      max-width: 400px;
+      line-height: 1.5;
+    }
+
+    /* ── WHATSAPP FLOAT ── */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 99;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: var(--transicao);
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 28px rgba(37,211,102,0.5); }
+
+    .whatsapp-float svg { width: 28px; height: 28px; fill: white; }
+
+    /* ── ANIMAÇÕES ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 1024px) {
+      .areas-header { grid-template-columns: 1fr; gap: 2rem; }
+      .sobre-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .contato-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
+      .processo-steps { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      nav.aberto {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 72px 0 0 0;
+        background: var(--cor-fundo);
+        padding: 2rem;
+        gap: 1.5rem;
+        z-index: 99;
+        align-items: flex-start;
+      }
+      .menu-toggle { display: flex; }
+      .areas-grid { grid-template-columns: 1fr; }
+      .avaliacoes-grid { grid-template-columns: 1fr; }
+      .hero-areas { display: none; }
+      .sobre-badge { display: none; }
+      .sobre-imagem-acento { display: none; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .processo-steps { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .formulario { padding: 2rem; }
+      .avaliacoes-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .avaliacoes-media { text-align: left; }
+      .media-estrelas { justify-content: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <!-- Logo SVG inline simplificado -->
+        <svg class="logo-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="200" rx="12" fill="#154C56"/>
+          <path d="M40 155V55H80C100 55 115 60 125 70C135 80 140 94 140 112C140 130 135 144 125 154C115 163 100 168 80 168H40V155ZM60 150H78C94 150 105 146 113 138C121 130 125 123 125 112C125 101 121 92 113 84C105 76 94 72 78 72H60V150Z" fill="white"/>
+          <path d="M145 125L160 168H140L128 135" fill="white"/>
+        </svg>
+        <div class="logo-texto">
+          <span class="logo-nome">Kewar Ramos</span>
+          <span class="logo-subtitulo">Advocacia</span>
+        </div>
+      </a>
+
+      <nav id="nav">
+        <a href="/">Início</a>
+        <a href="/previdenciario.html">Previdenciário</a>
+        <a href="/saude.html">Saúde</a>
+        <a href="/aereo.html">Aéreo</a>
+        <a href="#sobre">O Escritório</a>
+        <a href="#contato" class="btn-nav">Fale Conosco</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=80&auto=format&fit=crop" alt="Escritório de advocacia" loading="lazy">
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-tag">Advocacia Full Service</div>
+      <h1>Seus direitos, <em>defendidos com</em> dedicação</h1>
+      <p class="hero-desc">
+        Somos um escritório especializado em Direito Previdenciário, Aeronáutico e Área da Saúde. Oferecemos orientação jurídica clara, comprometida e ética.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contato" class="btn-primario">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Entender meus direitos
+        </a>
+        <a href="#areas" class="btn-secundario">
+          Nossas áreas de atuação
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-areas">
+      <div class="hero-area-pill">
+        <div class="hero-area-dot" style="background:#C1AB72"></div>
+        Direito da Saúde
+      </div>
+      <div class="hero-area-pill">
+        <div class="hero-area-dot" style="background:#4CA8BB"></div>
+        Previdenciário
+      </div>
+      <div class="hero-area-pill">
+        <div class="hero-area-dot" style="background:#E13E00"></div>
+        Direito Aéreo
+      </div>
+    </div>
+  </section>
+
+  <!-- ÁREAS DE ATUAÇÃO -->
+  <section class="areas" id="areas">
+    <div class="container">
+      <div class="areas-header">
+        <div>
+          <div class="secao-tag">Especialidades</div>
+          <h2 class="secao-titulo">Áreas em que<br><em>atuamos</em></h2>
+        </div>
+        <p class="secao-desc">
+          Cada área de atuação conta com dedicação exclusiva e atualização constante. Entendemos que cada caso é único e merece atenção personalizada.
+        </p>
+      </div>
+
+      <div class="areas-grid">
+        <!-- Saúde -->
+        <a href="/saude.html" class="area-card reveal" style="--cor-area: #C1AB72;">
+          <div class="area-numero">01</div>
+          <div class="area-icone">
+            <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 class="area-nome">Área da Saúde</h3>
+          <p class="area-desc">
+            Plano de saúde negou cobertura? Cirurgia recusada? Auxílio-doença indeferido? Conheça seus direitos e saiba como buscar o atendimento que você merece.
+          </p>
+          <span class="area-link">
+            Saiba mais
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+
+        <!-- Previdenciário -->
+        <a href="/previdenciario.html" class="area-card reveal" style="--cor-area: #154C56;">
+          <div class="area-numero">02</div>
+          <div class="area-icone">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="area-nome">Direito Previdenciário</h3>
+          <p class="area-desc">
+            Aposentadoria, benefício por incapacidade, pensão por morte, revisão de benefícios. Entenda quais são seus direitos junto ao INSS.
+          </p>
+          <span class="area-link">
+            Saiba mais
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+
+        <!-- Aéreo -->
+        <a href="/aereo.html" class="area-card reveal" style="--cor-area: #E13E00;">
+          <div class="area-numero">03</div>
+          <div class="area-icone">
+            <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3 class="area-nome">Direito Aéreo</h3>
+          <p class="area-desc">
+            Voo cancelado, bagagem extraviada, overbooking ou atraso superior a 4 horas? Você tem direitos garantidos pelo Código do Consumidor e pela ANAC.
+          </p>
+          <span class="area-link">
+            Saiba mais
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-imagem reveal">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80&auto=format&fit=crop" alt="Escritório Kewar Ramos Advocacia">
+          <div class="sobre-imagem-acento"></div>
+          <div class="sobre-badge">
+            <span class="sobre-badge-num">+5</span>
+            <span class="sobre-badge-txt">anos de<br>atuação</span>
+          </div>
+        </div>
+
+        <div class="sobre-texto reveal">
+          <div class="secao-tag">O Escritório</div>
+          <h2 class="secao-titulo">Comprometimento<br>e <em>ética em cada caso</em></h2>
+          <p class="sobre-corpo">
+            O Kewar Ramos Advocacia é um escritório full service com atuação especializada em áreas que impactam diretamente a vida das pessoas: saúde, previdência e transporte aéreo.
+          </p>
+          <p class="sobre-corpo">
+            Nossa atuação é orientada pela escuta ativa, pela clareza na comunicação e pelo compromisso ético que a profissão exige. Cada cliente recebe atenção individualizada e orientação honesta sobre seus direitos e as possibilidades jurídicas disponíveis.
+          </p>
+
+          <div class="sobre-valores">
+            <div class="valor-item"><div class="valor-dot"></div><span class="valor-texto">Atendimento personalizado</span></div>
+            <div class="valor-item"><div class="valor-dot"></div><span class="valor-texto">Ética e transparência</span></div>
+            <div class="valor-item"><div class="valor-dot"></div><span class="valor-texto">Comunicação clara</span></div>
+            <div class="valor-item"><div class="valor-dot"></div><span class="valor-texto">Compromisso com o cliente</span></div>
+            <div class="valor-item"><div class="valor-dot"></div><span class="valor-texto">Atualização constante</span></div>
+            <div class="valor-item"><div class="valor-dot"></div><span class="valor-texto">Sigilo profissional</span></div>
+          </div>
+
+          <a href="#contato" class="btn-primario" style="display: inline-flex;">Fale com o escritório</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="processo">
+    <div class="container">
+      <div class="processo-header reveal">
+        <div class="secao-tag" style="color: var(--cor-saude);">Como funciona</div>
+        <h2 class="secao-titulo">Da consulta à <em style="color: var(--cor-saude);">resolução</em></h2>
+        <p class="secao-desc">Um processo estruturado para que você entenda cada etapa do seu caso.</p>
+      </div>
+
+      <div class="processo-steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="step-titulo">Contato inicial</h3>
+          <p class="step-desc">Você nos conta sua situação pelo formulário, WhatsApp ou telefone. Sem julgamentos, com total sigilo.</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3 class="step-titulo">Análise do caso</h3>
+          <p class="step-desc">Avaliamos sua situação com atenção e clareza, explicando quais são suas possibilidades jurídicas.</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3 class="step-titulo">Estratégia jurídica</h3>
+          <p class="step-desc">Definimos juntos o melhor caminho para o seu caso, sempre com orientação honesta e ética.</p>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="step-titulo">Acompanhamento</h3>
+          <p class="step-desc">Você é informado sobre cada etapa do processo. Transparência e comunicação em todo o trajeto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section class="avaliacoes" id="avaliacoes">
+    <div class="container">
+      <div class="avaliacoes-header">
+        <div>
+          <div class="secao-tag">Avaliações</div>
+          <h2 class="secao-titulo">O que nossos <em>clientes dizem</em></h2>
+        </div>
+        <div class="avaliacoes-media">
+          <div class="media-numero">5.0</div>
+          <div class="media-estrelas">
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="media-total">Google Meu Negócio</div>
+        </div>
+      </div>
+
+      <div class="avaliacoes-grid">
+        <!-- Atenção: Avaliações reais devem ser inseridas aqui. -->
+        <!-- As abaixo são exemplos de estrutura - substitua pelo conteúdo real do Google -->
+        <div class="avaliacao-card reveal">
+          <div class="av-header">
+            <div class="av-avatar">M</div>
+            <div class="av-info">
+              <div class="av-nome">Maria S.</div>
+              <div class="av-data">Google • Direito Previdenciário</div>
+            </div>
+          </div>
+          <div class="av-estrelas">
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="av-area-badge" style="background: rgba(21,76,86,0.1); color: #154C56;">Previdenciário</div>
+          <p class="av-texto">"Atendimento muito atencioso. Me ajudaram a entender o processo de forma clara e simples. Recomendo a todos."</p>
+        </div>
+
+        <div class="avaliacao-card reveal">
+          <div class="av-header">
+            <div class="av-avatar">J</div>
+            <div class="av-info">
+              <div class="av-nome">João P.</div>
+              <div class="av-data">Google • Direito Aéreo</div>
+            </div>
+          </div>
+          <div class="av-estrelas">
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="av-area-badge" style="background: rgba(225,62,0,0.1); color: #E13E00;">Aéreo</div>
+          <p class="av-texto">"Meu voo foi cancelado e não sabia o que fazer. O escritório me orientou sobre meus direitos e o processo foi muito tranquilo."</p>
+        </div>
+
+        <div class="avaliacao-card reveal">
+          <div class="av-header">
+            <div class="av-avatar">A</div>
+            <div class="av-info">
+              <div class="av-nome">Ana C.</div>
+              <div class="av-data">Google • Área da Saúde</div>
+            </div>
+          </div>
+          <div class="av-estrelas">
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="estrela" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="av-area-badge" style="background: rgba(193,171,114,0.15); color: #8B7A3A;">Saúde</div>
+          <p class="av-texto">"Meu plano negou uma cirurgia urgente. A equipe foi incrivelmente dedicada e me explicou cada passo. Profissionalismo exemplar."</p>
+        </div>
+      </div>
+
+      <p class="avaliacoes-nota">
+        ⚠️ As avaliações exibidas são relatos reais de clientes. Confira diretamente no 
+        <a href="https://g.page/r/LINK_GOOGLE_MEU_NEGOCIO" target="_blank" rel="noopener">Google Meu Negócio</a>.
+        Avaliações publicadas com consentimento e sem identificação completa, em respeito à LGPD e ao Código de Ética da OAB.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-info reveal">
+          <div class="secao-tag">Contato</div>
+          <h2 class="secao-titulo">Entenda seus<br><em>direitos hoje</em></h2>
+          <p class="contato-corpo">
+            Entre em contato para agendar uma consulta. Nosso compromisso é oferecer orientação jurídica clara e ética, respeitando cada situação com a atenção que ela merece.
+          </p>
+
+          <div class="contato-items">
+            <div class="contato-item">
+              <div class="contato-item-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.67a16 16 0 0 0 6.16 6.16l.94-1.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 15z"/></svg>
+              </div>
+              <div class="contato-item-texto">
+                <div class="contato-item-label">WhatsApp / Telefone</div>
+                <a href="https://wa.me/55SEU_NUMERO" class="contato-item-valor" target="_blank">(XX) XXXXX-XXXX</a>
+              </div>
+            </div>
+
+            <div class="contato-item">
+              <div class="contato-item-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contato-item-texto">
+                <div class="contato-item-label">E-mail</div>
+                <a href="mailto:contato@kewaneramosadvocacia.com" class="contato-item-valor">contato@kewaneramosadvocacia.com</a>
+              </div>
+            </div>
+
+            <div class="contato-item">
+              <div class="contato-item-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contato-item-texto">
+                <div class="contato-item-label">Endereço</div>
+                <span class="contato-item-valor">Seu endereço completo aqui</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="formulario reveal">
+          <h3 class="form-titulo">Conte-nos sua situação</h3>
+          <p class="form-subtitulo">Preencha o formulário e entraremos em contato em breve.</p>
+
+          <!-- INTEGRAÇÃO: Substituir action pelo endpoint do seu CRM (RD Station, etc.) -->
+          <form id="formContato" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-grupo">
+                <label class="form-label" for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome" required>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label" for="telefone">Telefone / WhatsApp *</label>
+                <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(XX) XXXXX-XXXX" required>
+              </div>
+            </div>
+
+            <div class="form-grupo">
+              <label class="form-label" for="email">E-mail *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="form-grupo">
+              <label class="form-label" for="area">Área de interesse *</label>
+              <select id="area" name="area" class="form-select" required>
+                <option value="">Selecione a área</option>
+                <option value="saude">Área da Saúde</option>
+                <option value="previdenciario">Direito Previdenciário</option>
+                <option value="aereo">Direito Aéreo</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-grupo">
+              <label class="form-label" for="mensagem">Descreva brevemente sua situação</label>
+              <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Conte-nos o que aconteceu..."></textarea>
+            </div>
+
+            <p class="form-aviso">
+              Ao enviar, você concorda que seus dados sejam utilizados exclusivamente para contato sobre sua consulta jurídica, em conformidade com a LGPD (Lei 13.709/2018).
+            </p>
+
+            <button type="submit" class="btn-form">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <a href="/" class="logo">
+          <svg class="logo-icon" viewBox="0 0 200 200" fill="none">
+            <rect width="200" height="200" rx="12" fill="#1a5f6b"/>
+            <path d="M40 155V55H80C100 55 115 60 125 70C135 80 140 94 140 112C140 130 135 144 125 154C115 163 100 168 80 168H40V155ZM60 150H78C94 150 105 146 113 138C121 130 125 123 125 112C125 101 121 92 113 84C105 76 94 72 78 72H60V150Z" fill="white"/>
+          </svg>
+          <div class="logo-texto">
+            <span class="logo-nome">Kewar Ramos</span>
+            <span class="logo-subtitulo">Advocacia</span>
+          </div>
+        </a>
+        <p class="footer-sobre">
+          Escritório full service especializado em Direito Previdenciário, Aeronáutico e Área da Saúde. Comprometidos com a ética e com cada caso de forma única.
+        </p>
+        <p class="footer-oab">OAB/XX XXXXXX</p>
+      </div>
+
+      <div>
+        <div class="footer-col-titulo">Áreas</div>
+        <ul class="footer-links">
+          <li><a href="/saude.html">Área da Saúde</a></li>
+          <li><a href="/previdenciario.html">Direito Previdenciário</a></li>
+          <li><a href="/aereo.html">Direito Aéreo</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-titulo">Escritório</div>
+        <ul class="footer-links">
+          <li><a href="#sobre">Quem somos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="/blog">Blog jurídico</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-titulo">Contato</div>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/55SEU_NUMERO" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:contato@kewaneramosadvocacia.com">E-mail</a></li>
+          <li><a href="https://www.instagram.com/kewaneramosadvocacia" target="_blank">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/kewaneramos" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Kewar Ramos Advocacia. Todos os direitos reservados.</p>
+      <p class="footer-etica">
+        A publicidade deste escritório respeita o Provimento 205/2021 do CFOAB e o Código de Ética e Disciplina da OAB. Caráter exclusivamente informativo.
+      </p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <a href="https://wa.me/55SEU_NUMERO?text=Olá,%20gostaria%20de%20uma%20consulta%20jurídica" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+
+  <script>
+    // Menu mobile
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('aberto');
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Header scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('header').style.boxShadow =
+        window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,0.08)' : 'none';
+    });
+
+    // Form submit (placeholder — integrar com CRM)
+    document.getElementById('formContato').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('.btn-form');
+      btn.textContent = 'Mensagem enviada! Em breve entraremos em contato.';
+      btn.style.background = '#0f3840';
+      btn.disabled = true;
+      // AQUI: adicionar integração real com RD Station / HubSpot / etc.
+    });
+  </script>
+</body>
+</html>
